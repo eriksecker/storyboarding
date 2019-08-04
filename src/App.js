@@ -1,12 +1,13 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container'
 
 import 'styles/App.scss';
 
 function App() {
   return (
-    <div className="App">
+    <Container className="App">
 			app
-    </div>
+    </Container>
   );
 }
 
