@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Col from 'react-bootstrap/Col';
-
 const Panel = (props) => {
 	const {
 		text,
 	} = props;
 
 	return (
-		<Col className="panel">
-			{ text }
-		</Col>
+		<div className="panel flex-grow-1 m-1 p-2 d-flex flex-column justify-content-center align-items-center" style={{verticalAlign: "center"}}>
+			<div className="text" style={{ maxWidth: "330px" }}>
+				{ text }
+			</div>
+		</div>
 	);
 }
 

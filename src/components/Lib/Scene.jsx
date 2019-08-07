@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Row from 'react-bootstrap/Row';
 
 import Title from './Title';
 
@@ -13,9 +12,9 @@ const Scene = (props) => {
 	return (
 		<div className="scene">
 			<Title text={ title } />
-			<Row>
+			<div className="d-flex flex-row flex-wrap">
 				{ children }
-			</Row>
+			</div>
 		</div>
 	);
 }
