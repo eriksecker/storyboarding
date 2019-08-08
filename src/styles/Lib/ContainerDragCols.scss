@@ -1,0 +1,28 @@
+.container-drag-cols {
+	background-color: #efefef;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: stretch;
+
+	> div {
+			min-height: 100px;
+
+			&.divider {
+				cursor: col-resize;
+				background-color: #000;
+			}
+
+			&.panel {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				.contents {
+					padding: 15px;
+				}
+			}
+	}
+
+}
