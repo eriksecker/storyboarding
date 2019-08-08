@@ -92,7 +92,7 @@ class ContainerDragCols extends Component {
 				widthChange = 0;
 			}
 
-			accumulatedWidth += width;
+			accumulatedWidth += width + DIVIDER_WIDTH;
 
 			return {
 				...idea,
